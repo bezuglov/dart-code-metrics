@@ -63,7 +63,7 @@ class MetricsAnalyzer {
                 lastLine: parseResult.lineInfo
                     .getLocation(scopedDeclaration.declaration.endToken.end)
                     .lineNumber,
-                cyclomaticLinesComplexity:
+                cyclomaticComplexityLines:
                     BuiltMap.from(controlFlowAstVisitor.complexityLines),
                 linesWithCode: functionBodyAstVisitor.linesWithCode,
                 operators: BuiltMap.from(halsteadVolumeAstVisitor.operators),
